@@ -21,6 +21,31 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "types": [
+      "node",
+      "jest"
+    ],
+    "paths": {
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
+      ],
+      "@app/constracts": [
+        "libs/constract/src",
+        "libs/constracts/src"
+      ],
+      "@app/constracts/*": [
+        "libs/constract/src/*",
+        "libs/constracts/src/*"
+      ],
+      "@app/database": [
+        "libs/database/src"
+      ],
+      "@app/database/*": [
+        "libs/database/src/*"
+      ]
+    }
   }
 }

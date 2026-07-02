@@ -7,3 +7,10 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
+  
+  user_database: 
+    image: postgres:18
+    env_file:
+      - ./apps/users/.env
+    ports:
+      - 5432:5432
